@@ -1,5 +1,5 @@
-tweet-format(7) -- syntax and conventions used in Twitter statuses
-==================================================================
+twitter-format(7) -- syntax and conventions used in Twitter statuses
+====================================================================
 
 ## SYNOPSIS
 
@@ -102,7 +102,7 @@ used to tag the message as related to some particular topic.
 
 ## ABOUT THIS MAN PAGE
 
-This `tweet-format(7)` man page was written for fun by [Adam Prescott](http://aprescott.com/). You can find its source on [GitHub](https://github.com/aprescott/twitter-format).
+This `twitter-format(7)` man page was written for fun by [Adam Prescott](http://aprescott.com/). You can find its source on [GitHub](https://github.com/aprescott/twitter-format).
 
 It is released under the terms of the MIT License with the copyright notice:
 
