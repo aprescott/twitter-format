@@ -1,0 +1,125 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "TWEET\-FORMAT" "7" "November 2012" "TWEET FORMAT" "TWITTER TWEET FORMAT"
+.
+.SH "NAME"
+\fBtweet\-format\fR \- syntax and conventions used in Twitter statuses
+.
+.SH "SYNOPSIS"
+\fImessage\fR
+.
+.br
+\fB@\fR\fIuser\fR \fImessage\fR
+.
+.br
+.
+.P
+\fB\.@\fR\fIuser\fR \fImessage\fR
+.
+.br
+\fBRT\fR \fB@\fR\fIuser\fR \fImessage\fR
+.
+.br
+\fBOH:\fR \fIquote\fR
+.
+.br
+\fB#\fR\fIhashtag\fR
+.
+.SH "DESCRIPTION"
+Twitter supports simple messages as sequences of characters\. In addition to the syntax for replying to a tweet poster, there are various conventions for non\-reply messages\.
+.
+.SH "PLAIN TWEETS"
+\fImessage\fR
+.
+.P
+The core message is a string of characters which does not begin with \fB@\fR\.
+.
+.P
+There are additional conventions within a message itself\. See the section on \fIMESSAGE CONVENTIONS\fR\.
+.
+.SH "@\-REPLIES"
+\fB@\fR\fIuser\fR \fImessage\fR
+.
+.P
+If \fImessage\fR is preceded with \fB@\fR\fIuser\fR, the tweet will be visible to the user with account name \fIuser\fR and any users who are following both you (as the sender) and \fIuser\fR\.
+.
+.SH "MENTION\-REPLY"
+\fB\.@\fR\fIuser\fR \fImessage\fR
+.
+.P
+If the leading \fB@\fR is preceded by any other character, commonly \fB\.\fR, the message is no longer an @reply tweet and will be visible to anyone following you (as the sender)\.
+.
+.P
+This convention is frequently used to reply to \fIuser\fR\'s tweet while making your reply visible to others, or to refer to \fIuser\fR in a "new" tweet without causing its contents to become invisible to your follows\.
+.
+.SH "RETWEETING"
+\fBRT\fR \fB@\fR\fIuser\fR \fImessage\fR
+.
+.P
+If \fB@\fR is preceded by \fBRT\fR, this is a convention indicating that you are \fIretweeting\fR someone\'s \fImessage\fR\. Doing so makes \fImessage\fR available to all your followers\.
+.
+.SH "OVERHEARD SENTENCES"
+\fBOH:\fR \fIquote\fR
+.
+.br
+\fBOH\fR \fB@\fR\fIuser\fR\fB:\fR \fIquote\fR
+.
+.P
+If \fImessage\fR begins with \fBOH:\fR, then what follows is a \fIquote\fR (which may or may not be wrapped in actual quotation marks) which has been \fBO\fRver\fBH\fReard\.
+.
+.P
+Sometimes the user is included, such as:
+.
+.P
+\fBOH\fR \fB@\fR\fIuser\fR\fB:\fR \fIquote\fR
+.
+.P
+This means, of course, that \fIuser\fR was overheard saying \fIquote\fR\.
+.
+.SH "MESSAGE CONVENTIONS"
+\fB@\fR\fIusermention\fR
+.
+.P
+\fImessage\fR can itself contain \fB@\fR\fIuser\fR references, called \fImentions\fR, which \fIuser\fR can see\.
+.
+.P
+\fB#\fR\fIhashtag\fR
+.
+.P
+Any words in \fImessage\fR which begin with \fB#\fR are called \fIhashtags\fR and are used to tag the message as related to some particular topic\.
+.
+.SH "EXAMPLES"
+.
+.TP
+\fBSimple message\fR
+I\'m on twitter!
+.
+.TP
+\fBReply\fR
+@twitter agreed\.
+.
+.TP
+\fBOverheard\fR
+OH: "140 characters? That\'ll never take off\."
+.
+.TP
+\fBOverheard with a user mention\fR
+OH @typed: "A man page? For Twitter? That\'s stupid\."
+.
+.TP
+\fBRetweet\fR
+RT @jack just setting up my twttr
+.
+.TP
+\fBHashtag\fR
+Writing a man page for tweets\. #pointless
+.
+.SH "ABOUT THIS MAN PAGE"
+This \fBtweet\-format(7)\fR man page was written for fun by Adam Prescott \fIhttp://aprescott\.com/\fR\. You can find its source on GitHub \fIhttps://github\.com/aprescott/twitter\-format\fR\.
+.
+.P
+It is released under the terms of the MIT License with the copyright notice:
+.
+.P
+Copyright (c) 2012 Adam Prescott <adam@aprescott\.com>

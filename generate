@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ronn --html --style toc,80c --organization "TWEET FORMAT" --manual "TWITTER TWEET FORMAT" twitter-format.ronn
+ronn --roff --organization "TWEET FORMAT" --manual "TWITTER TWEET FORMAT" twitter-format.ronn
