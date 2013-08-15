@@ -32,6 +32,9 @@
 .br
 \fB$\fR\fIticker\fR
 .
+.br
+\fImessage\fR \fB^\fR\fIsigned\fR
+.
 .SH "DESCRIPTION"
 Twitter supports simple messages as sequences of characters\. In addition to the syntax for replying to a tweet poster, there are various conventions for non\-reply messages\.
 .
@@ -89,6 +92,12 @@ Sometimes the user is included, such as:
 .P
 This means, of course, that \fIuser\fR was overheard saying \fIquote\fR\.
 .
+.SH "SIGNATURES"
+\fImessage\fR \fB^\fR\fIsigned\fR
+.
+.P
+Sometimes a \fImessage\fR ends with a \fI^signature\fR, indicating which user wrote the tweet\. This is used to differentiate between many users on a shared account, most often company accounts\.
+.
 .SH "MESSAGE CONVENTIONS"
 \fB@\fR\fIusermention\fR
 .
@@ -136,6 +145,10 @@ Writing a man page for tweets\. #pointless
 .TP
 \fBModified tweet\fR
 Not bad! MT @typed man page updated\.
+.
+.TP
+\fBSigned tweet\fR
+We\'ll take a look at that for you\. ^JS
 .
 .TP
 \fBStock ticker\fR

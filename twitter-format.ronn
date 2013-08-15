@@ -11,7 +11,8 @@ _message_<br>
 **MT** **@**_user_ _message_<br>
 **OH:** _quote_<br>
 **#**_hashtag_<br>
-**$**_ticker_
+**$**_ticker_<br>
+_message_ **&#94;**_signed_
 
 ## DESCRIPTION
 
@@ -76,6 +77,14 @@ Sometimes the user is included, such as:
 
 This means, of course, that _user_ was overheard saying _quote_.
 
+## SIGNATURES
+
+_message_ **&#94;**_signed_
+
+Sometimes a _message_ ends with a _&#94;signature_, indicating which user wrote the
+tweet. This is used to differentiate between many users on a shared account, most
+often company accounts.
+
 ## MESSAGE CONVENTIONS
 
 **@**_usermention_
@@ -115,6 +124,9 @@ Similar to a hashtags, **$** is used to refer to stock ticker symbols, such as
 
 * **Modified tweet**:
   Not bad! MT @typed man page updated.
+
+* **Signed tweet**:
+  We'll take a look at that for you. &#94;JS
 
 * **Stock ticker**:
   Whoa, $AAPL just rallied!
