@@ -1,7 +1,7 @@
 .\" generated with Ronn/v0.7.3
 .\" http://github.com/rtomayko/ronn/tree/0.7.3
 .
-.TH "TWITTER\-FORMAT" "7" "November 2012" "TWITTER FORMAT" "TWITTER TWEET FORMAT"
+.TH "TWITTER\-FORMAT" "7" "August 2013" "TWITTER FORMAT" "TWITTER TWEET FORMAT"
 .
 .SH "NAME"
 \fBtwitter\-format\fR \- syntax and conventions used in Twitter statuses
@@ -59,6 +59,12 @@ This convention is frequently used to reply to \fIuser\fR\'s tweet while making 
 .P
 If \fB@\fR is preceded by \fBRT\fR, this is a convention indicating that you are \fIretweeting\fR someone\'s \fImessage\fR\. Doing so makes \fImessage\fR available to all your followers\.
 .
+.P
+\fBMT\fR \fB@\fR\fIuser\fR \fImessage\fR
+.
+.P
+\fBMT\fR, for \fBm\fRodified \fBt\fRweet, is used when the \fImessage\fR would have exceeded the character limit\. This is usually seen in combination with some added comment, otherwise a simple retweet would suffice\.
+.
 .SH "OVERHEARD SENTENCES"
 \fBOH:\fR \fIquote\fR
 .
@@ -115,6 +121,10 @@ RT @jack just setting up my twttr
 \fBHashtag\fR
 Writing a man page for tweets\. #pointless
 .
+.TP
+\fBModified tweet\fR
+Not bad! MT @typed man page updated\.
+.
 .SH "ABOUT THIS MAN PAGE"
 This \fBtwitter\-format(7)\fR man page was written for fun by Adam Prescott \fIhttp://aprescott\.com/\fR\. You can find its source on GitHub \fIhttps://github\.com/aprescott/twitter\-format\fR\.
 .
@@ -122,4 +132,4 @@ This \fBtwitter\-format(7)\fR man page was written for fun by Adam Prescott \fIh
 It is released under the terms of the MIT License with the copyright notice:
 .
 .P
-Copyright (c) 2012 Adam Prescott <adam@aprescott\.com>
+Copyright (c) 2012\-2013 Adam Prescott <adam@aprescott\.com>

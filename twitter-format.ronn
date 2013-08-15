@@ -54,6 +54,12 @@ If **@** is preceded by **RT**, this is a convention indicating that you are
 _retweeting_ someone's _message_. Doing so makes _message_ available to all
 your followers.
 
+**MT** **@**_user_ _message_
+
+**MT**, for **m**odified **t**weet, is used when the _message_ would have exceeded
+the character limit. This is usually seen in combination with some added comment,
+otherwise a simple retweet would suffice.
+
 ## OVERHEARD SENTENCES
 
 **OH:** _quote_<br>
@@ -100,10 +106,13 @@ used to tag the message as related to some particular topic.
 * **Hashtag**:
   Writing a man page for tweets. #pointless
 
+* **Modified tweet**:
+  Not bad! MT @typed man page updated.
+
 ## ABOUT THIS MAN PAGE
 
 This `twitter-format(7)` man page was written for fun by [Adam Prescott](http://aprescott.com/). You can find its source on [GitHub](https://github.com/aprescott/twitter-format).
 
 It is released under the terms of the MIT License with the copyright notice:
 
-Copyright (c) 2012 Adam Prescott &lt;adam@aprescott.com&gt;
+Copyright (c) 2012-2013 Adam Prescott &lt;adam@aprescott.com&gt;
