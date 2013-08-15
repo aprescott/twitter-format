@@ -10,7 +10,7 @@ _message_<br>
 **RT** **@**_user_ _message_<br>
 **MT** **@**_user_ _message_<br>
 **OH:** _quote_<br>
-**#**_hashtag_
+**#**_hashtag_<br>
 **$**_ticker_
 
 ## DESCRIPTION
