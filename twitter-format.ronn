@@ -8,6 +8,7 @@ _message_<br>
 
 **.@**_user_ _message_<br>
 **RT** **@**_user_ _message_<br>
+**MT** **@**_user_ _message_<br>
 **OH:** _quote_<br>
 **#**_hashtag_
 
