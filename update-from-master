@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Updates the .html version (for GitHub Pages) with
+# whatever is on the master branch.
+
+git show master:twitter-format.7.html > twitter-format.7.html
