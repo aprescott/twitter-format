@@ -11,6 +11,7 @@ _message_<br>
 **MT** **@**_user_ _message_<br>
 **OH:** _quote_<br>
 **#**_hashtag_
+**$**_ticker_
 
 ## DESCRIPTION
 
@@ -87,6 +88,11 @@ _user_ can see.
 Any words in _message_ which begin with **#** are called _hashtags_ and are
 used to tag the message as related to some particular topic.
 
+**$**_ticker_
+
+Similar to a hashtags, **$** is used to refer to stock ticker symbols, such as
+**$**AAPL for Apple, Inc.
+
 ## EXAMPLES
 
 * **Simple message**:
@@ -109,6 +115,9 @@ used to tag the message as related to some particular topic.
 
 * **Modified tweet**:
   Not bad! MT @typed man page updated.
+
+* **Stock ticker**:
+  Whoa, $AAPL just rallied!
 
 ## ABOUT THIS MAN PAGE
 
